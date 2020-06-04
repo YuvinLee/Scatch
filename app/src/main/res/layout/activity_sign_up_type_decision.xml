@@ -7,7 +7,18 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Scatch"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_select_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -17,49 +28,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <Button
-        android:id="@+id/button6"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Google로 가입하기"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        tools:layout_editor_absoluteY="216dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Facebook으로 가입"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
-
-
-    <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_email_sign_up"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="이메일로 가입하기"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/text_select_type"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintStart_toStartOf="@+id/text_select_type"
+        app:layout_constraintTop_toBottomOf="@+id/text_select_type" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/btn_google_sign_up"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="Scatch"
-        android:textSize="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="44dp"
+        android:text="Google로 가입하기"
+        app:layout_constraintEnd_toEndOf="@+id/btn_email_sign_up"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_email_sign_up"
+        app:layout_constraintTop_toBottomOf="@+id/btn_email_sign_up" />
+
+    <Button
+        android:id="@+id/btn_facebook_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Facebook으로 가입"
+        app:layout_constraintEnd_toEndOf="@+id/btn_email_sign_up"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_email_sign_up"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google_sign_up" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
